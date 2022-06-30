@@ -109,7 +109,7 @@
         <OutArgument x:TypeArguments="x:String">[InvoiceNumber]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">[ExtractedText.SubString(ExtractedText.IndexOf("#"), ExtractedText.IndexOf("Jun")- ExtractedText.IndexOf("#"))]</InArgument>
+        <InArgument x:TypeArguments="x:String">[ExtractedText.SubString(ExtractedText.IndexOf("#"), ExtractedText.IndexOf("Jun")- ExtractedText.IndexOf("#")-1)]</InArgument>
       </Assign.Value>
     </Assign>
     <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[InvoiceNumber]" />
